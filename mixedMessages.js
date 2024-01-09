@@ -10,7 +10,7 @@ e.g., You will meet a famous celebrity at 18:00 on sunday*/
 //STEP FOUR - Output the final random event
 
 const randomItems = {
-    events: ['You will meet Ronaldo around ', 'A meteor will strike at approximatley ', 'You will win a million pounds after ', 'A cat will be waiting for you in the park around '],
+    events: ['You will meet Ronaldo around ', 'A meteor will strike at approximatley ', 'You will win a million pounds after ', 'A suspicious cat will be waiting for you in the park around '],
     days: ['Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 }
 
@@ -28,7 +28,7 @@ const randomTimeOfDay = () => {
 const finalStatement = (randomTimeOfDay, randomItems) => {
     let randomDayIndex = Math.floor(Math.random() * randomItems.days.length)
     let randomEventIndex = Math.floor(Math.random() * randomItems.events.length)
-    return randomTimeOfDay + " " + randomItems.days[randomDayIndex]
+    return randomItems.events[randomEventIndex] + randomTimeOfDay + " on a " + randomItems.days[randomDayIndex]
 }
 
 console.log(finalStatement(randomTimeOfDay(), randomItems))
