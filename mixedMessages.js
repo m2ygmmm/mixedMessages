@@ -9,3 +9,20 @@ e.g., You will meet a famous celebrity at 18:00 on sunday*/
 //time of day and and random time.
 //STEP FOUR - Output the final random event
 
+const randomItems = {
+    events: ['You will meet Ronaldo around ', 'A meteor will strike at approximatley ', 'You will win a million pounds after ', 'A cat will be waiting for you in the park around '],
+    days: ['Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+}
+
+const randomTimeOfDay = () => {
+    let hour = Math.floor(Math.random() * 25)
+    if(hour.toString().length === 1){
+        hour = '0' + hour + ':00' + 'AM'
+    }else{
+        hour = hour + ':00' + 'PM'
+
+    }
+    console.log(hour)
+}
+
+randomTimeOfDay()
