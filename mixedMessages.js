@@ -22,7 +22,13 @@ const randomTimeOfDay = () => {
         hour = hour + ':00' + 'PM'
 
     }
-    console.log(hour)
+    return hour
 }
 
-randomTimeOfDay()
+const finalStatement = (randomTimeOfDay, randomItems) => {
+    let randomDayIndex = Math.floor(Math.random() * randomItems.days.length)
+    let randomEventIndex = Math.floor(Math.random() * randomItems.events.length)
+    return randomTimeOfDay + " " + randomItems.days[randomDayIndex]
+}
+
+console.log(finalStatement(randomTimeOfDay(), randomItems))
