@@ -10,7 +10,7 @@ e.g., You will meet a famous celebrity at 18:00 on sunday*/
 //STEP FOUR - Output the final random event
 
 const randomItems = {
-    events: ['You will meet Ronaldo around ', 'A meteor will strike at approximatley ', 'You will win a million pounds after ', 'A suspicious cat will be waiting for you in the park around '],
+    events: ['You will meet Crisitano Ronaldo around ', 'A meteor will strike at approximatley ', 'You will win a million pounds after ', 'A suspicious cat will be waiting for you in the park around '],
     days: ['Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 }
 
